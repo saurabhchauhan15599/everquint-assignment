@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import type { Task, FilterState } from '../types';
 import { priorityWeight } from '../utils';
 
-export function useFilteredTasks(tasks: Task[], filters: FilterState) {
+export function useFilteredTasks(tasks: Task[], filters: FilterState): Task[] {
   return useMemo(() => {
     let result = [...tasks];
 
